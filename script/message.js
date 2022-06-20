@@ -23,18 +23,18 @@
     function detruire_boite_modale(){
         elmBoite__modale.removeChild(elmBoite__x)
         elmBody.removeChild(elmBoite__modale)
-    }
-  
-    creer_boite_modale()
-    elmOK.addEventListener('mousedown', function(){
-        console.log('Bravo le script fonctionne!')
-    })
-
-    elmBoite__X.addEventListener('mousedown', function(){
-
-        elmBoite__modale.classList.remove('boite__modale__ouvrir')
-        console.log(elmBoite__modale.classList)
-
-    })
-
-})()
+     }
+     creer_boite_modale()
+     elmOK.addEventListener('mousedown', function(){
+         console.log('Bravo le script fonctionne')
+         
+         elmBoite__modale.classList.add('boite__modale__ouvrir')
+         console.log(elmBoite__modale.classList)
+     })
+ 
+     elmBoite__x.addEventListener('mousedown', function(){
+       
+         elmBoite__modale.classList.remove('boite__modale__ouvrir')
+         console.log(elmBoite__modale.classList)
+     })
+ })()
