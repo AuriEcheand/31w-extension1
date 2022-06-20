@@ -18,7 +18,8 @@
         elmBoite__x.innerHTML = "X"
         elmBoite__modale.classList.add('boite__modale')
         elmBody.appendChild(elmBoite__modale);
-        elmBoite__contenu.innerHTML = "ceci est un test"
+        let mon_petit_contenu = document.querySelector('.code__adresse').innerHTML
+        elmBoite__contenu.innerHTML = mon_petit_contenu//"ceci est un test"
     }
     function detruire_boite_modale(){
         elmBoite__modale.removeChild(elmBoite__x)
